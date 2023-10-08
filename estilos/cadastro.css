@@ -1,0 +1,536 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gruppo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.logo {
+  display: flex;
+}
+
+.logo h1 {
+  color: #2693a4;
+  font-family: 'Chakra Petch', sans-serif;
+  font-size: 1.5rem;
+
+}
+
+.logo h2 {
+  color: #2693a4;
+  font-family: 'Chakra Petch', sans-serif;
+  font-size: 2rem;
+
+}
+
+header .nav-bar {
+  margin-right: 7rem;
+}
+
+header .nav-bar a {
+  font-family: 'Alumni Sans', sans-serif;
+  text-decoration: none;
+  padding: 15px 20px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #003f8c;
+  background-color: #fff;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  margin-right: 20px;
+
+}
+header .nav-bar a:hover {
+  transition: all 0.3s ease 0s;
+  background-color: #2693a4;
+  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
+}
+
+header .nav-bar a:active {
+  transform: translateY(-1px);
+}
+
+header .button-login a {
+  font-family: 'Chakra Petch', sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #2693a4;
+  padding: 8px 20px;
+  border: 1px solid;
+  border-radius: 1000px;
+  transition: all .2s;
+  position: relative;
+
+}
+
+.button-login a:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(27, 27, 27, .5);
+}
+
+.button-login a:active {
+  transform: translateY(-3px);
+}
+
+.button-login a::after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 100px;
+  top: 0;
+  left: 0;
+  position: absolute;
+  z-index: -1;
+  transition: all .3s;
+}
+
+.button-login a:hover::after {
+  background-color: #015eb1;
+  transform: scaleX(1.4) scaleY(1.5);
+  opacity: 0;
+}
+
+/*fim cabeçalho*/
+   main{
+    margin: 5rem auto;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+   }
+   .form {
+    
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 500px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 20px;
+    position: relative;
+    box-shadow: 0px 106px 42px rgba(0, 0, 0, 0.01),
+    0px 59px 36px rgba(0, 0, 0, 0.05), 0px 26px 26px rgba(0, 0, 0, 0.09),
+    0px 7px 15px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 11px;
+  font-family: "Inter", sans-serif;
+  }
+  
+  .title {
+    margin: auto;
+    font-family: 'Share Tech Mono', monospace;
+    color: #159A9C;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+  }
+
+  .message, .signin {
+    text-align: center;
+    color: rgba(88, 87, 87, 0.822);
+    font-size: 14px;
+  }
+  
+  .flex {
+    display: flex;
+    width: 100%;
+    gap: 6px;
+  }
+  
+  .form label {
+    position: relative;
+  }
+  
+  .form label .input {
+    width: 100%;
+    padding: 10px 10px 20px 10px;
+    outline: 0;
+    border: 1px solid rgba(105, 105, 105, 0.397);
+    border-radius: 10px;
+  }
+  
+  .form label .input + span {
+    position: absolute;
+    left: 10px;
+    top: 15px;
+    color: grey;
+    font-size: 0.9em;
+    cursor: text;
+    transition: 0.3s ease;
+  }
+  
+  .form label .input:placeholder-shown + span {
+    top: 15px;
+    font-size: 0.9em;
+  }
+  
+  .form label .input:focus + span,.form label .input:valid + span {
+    top: 30px;
+    font-size: 0.7em;
+    font-weight: 600;
+  }
+  
+  .form label .input:valid + span {
+    color: green;
+  }
+  .separator {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    color: #8B8E98;
+    font-size: 15px;
+  }
+  
+  .separator .line {
+    display: block;
+    width: 20%;
+    height: 1px;
+    border: 0;
+    background-color: #e8e8e8;
+  }
+  
+  .cadastrar {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background-color: royalblue;
+    padding: 10px;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 16px;
+    transform: .3s ease;
+    font-family: 'Share Tech Mono', monospace;
+    text-transform: uppercase;
+    transition: all .4s ease;
+  }
+  .cadastrar:hover{
+    
+      transform: scale(102%);
+      transition: all .4s ease;
+  }
+  .button-logar{
+    display: flex;
+    place-content: center;
+    align-items: center;
+    text-decoration: none;
+    width: 100%;
+    height: 40px;
+    border: 0;
+    background: #89a8eb;
+    border-radius: 7px;
+    color: #ffffff;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: all .4s ease;
+    font-family: 'Share Tech Mono', monospace;
+  }
+  .button-logar a{
+    text-decoration: none;
+    color: #fff
+  }
+  .button-logar:hover{
+    transform: scale(105%);
+    background-color: #159A9C;
+    transition: all .4s ease;
+  }
+
+/*Inicio Footer*/
+footer {
+
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  padding: 40px 0;
+
+}
+
+.container-footer {
+  max-width: 1400px;
+  padding: 0 4%;
+  margin: auto;
+}
+
+.row-footer {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer-col {
+  width: 25%;
+  padding: 0 15px;
+}
+
+.footer-col h4 {
+  font-size: 22px;
+  color: #003f8c;
+  margin-bottom: 20px;
+  font-weight: 500;
+  position: relative;
+  text-transform: uppercase;
+  font-family: 'Share Tech Mono', monospace;
+}
+
+.footer-col ul {
+  list-style: none;
+}
+
+.footer-col ul li {
+  margin: 10px 0;
+}
+
+.footer-col ul li a {
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #015eb1;
+  text-decoration: none;
+  font-weight: 300;
+  display: block;
+  transition: all 0.3s ease;
+  font-family: 'Jost', sans-serif;
+}
+
+.footer-col ul li a:hover {
+  color: #015eb1;
+  padding-left: 10px;
+}
+
+.footer-col .form-email input {
+  width: 100%;
+  padding: 10px;
+  font-size: 15px;
+  outline: none;
+  border: 1px solid #0F70F7;
+  color: #0F70F7;
+
+}
+
+.footer-col .form-email input:hover {
+  border: 1px solid #003f8c;
+  transition: 1.5s;
+}
+
+.footer-col .form-email input::placeholder {
+  color: #003f8c;
+}
+
+.footer-col .form-email button {
+  width: 100%;
+  margin-top: 10px;
+  padding: 10px;
+  font-size: 17px;
+  outline: none;
+  border: none;
+  background-color: #0F70F7;
+  cursor: pointer;
+  color: #fff;
+  border-radius: 3px;
+  font-family: 'Jost', sans-serif;
+  transition: all .3s ease;
+}
+
+.footer-col .form-email button:hover {
+
+  transition: all .3s ease;
+  transform: scale(103%);
+}
+.social-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f2f2f2;
+  box-shadow: 0px 0px 15px #00000027;
+  padding: 15px 10px;
+width: 100%;
+}
+
+.social-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: 0 10px;
+  background-color: #fff;
+  box-shadow: 0px 0px 4px #00000027;
+  transition: 0.3s;
+}
+
+.social-button:hover {
+  background-color: #f2f2f2;
+  box-shadow: 0px 0px 6px 3px #00000027;
+}
+
+.social-buttons svg {
+  transition: 0.3s;
+  height: 20px;
+}
+
+.wpp {
+  background-color:green;
+}
+
+.wpp svg {
+  fill: #f2f2f2;
+}
+
+.wpp:hover svg {
+  fill: #3b5998;
+}
+
+.github {
+  background-color: #333;
+}
+
+.github svg {
+  width: 25px;
+  height: 25px;
+  fill: #f2f2f2;
+}
+
+.github:hover svg {
+  fill: #333;
+}
+
+.linkedin {
+  background-color: #0077b5;
+}
+
+.linkedin svg {
+  fill: #f2f2f2;
+}
+
+.linkedin:hover svg {
+  fill: #0077b5;
+}
+
+.instagram {
+  background-color: #c13584;
+}
+
+.instagram svg {
+  fill: #f2f2f2;
+}
+
+.instagram:hover svg {
+  fill: #c13584;
+}
+
+/*Fim Footer*/
+
+@media screen and (max-width: 768px) {
+  main{
+    width: 100%;
+  }
+  .separator{
+    font-size: 15px;
+    text-align: center;
+  }
+  .nav-bar {
+    display: none;
+   
+    flex-direction: column;
+    background-color: transparent;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    padding: 20px;
+  }
+
+  .nav-bar.active {
+    display: flex;
+  }
+
+  .nav-bar ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .nav-bar a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+
+  .button-login {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: block;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+
+  .bar {
+    width: 30px;
+    height: 3px;
+    background-color: #2693a4;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+
+  .menu-open .bar:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+
+  .menu-open .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .menu-open .bar:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
+ .form_container{
+  width: 80%;
+  height: auto;
+ }
+  footer {
+    padding: 40px 0;
+  }
+
+  .footer-col {
+    width: 50%;
+    /* Altere a largura das colunas para 50% em telas menores */
+    padding: 0 15px;
+  }
+
+  .footer-col h4 {
+    font-size: 18px;
+    /* Reduza o tamanho da fonte do título */
+    margin-bottom: 15px;
+    /* Reduza a margem inferior do título */
+  }
+
+  .footer-col ul li a {
+    font-size: 14px;
+    /* Reduza o tamanho da fonte dos links */
+  }
+}
